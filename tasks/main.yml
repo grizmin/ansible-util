@@ -47,7 +47,7 @@
 
 - name: Include service management configuration
   tags: util
-  include_vars: vars/service/{{ util_init_system|default(util_init_system_default) }}.yml
+  include_vars: "{{ role_path }}/vars/service/{{ util_init_system|default(util_init_system_default) }}.yml"
 
 
 # The role does not allow to re-configure whether EPEL repository is

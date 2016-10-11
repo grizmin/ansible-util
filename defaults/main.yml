@@ -79,4 +79,5 @@ util_epel_baseurl: https://download.fedoraproject.org/pub/epel
 util_package_list_ansible_deps_epel: []
 
 # configure path to lib role
-util_path_to_lib_role: "{{ lib_roles_path|default(playbook_dir + '/roles') }}"
+#util_path_to_lib_role: "{{ lib_roles_path|default('/etc/ansible/roles') }}"
+util_path_to_lib_role: /etc/ansible/roles
